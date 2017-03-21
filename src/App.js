@@ -35,7 +35,7 @@ class App extends Component {
         <Form addTweet={this.addTweet} />
         <Loading isLoading={this.state.isLoading} />
         <TweetList tweets={this.state.tweets}
-          deleteTweet={this.deleteTweet}
+                   removeTweet={this.deleteTweet}
           />
         <div className="app-error">{this.state.error}</div>
       </div>
