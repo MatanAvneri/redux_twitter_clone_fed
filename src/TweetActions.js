@@ -1,3 +1,5 @@
+import queryString from 'query-string'
+
 export const deleteTweet = (tweetId) => {
   return {
     type: "DELETE_TWEET",
@@ -60,10 +62,14 @@ export const fetchTweets = (store) => {
 
 export const addTweet = (store, newTweetBody) => {
   store.dispatch(initAdd());
+  const data = queryString.stringify({body: newTweetBody})
 
   fetch("http://localhost:5000/tweets", {
     method: "POST",
-    body: newTweetBody
+    body: data,
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
   })
     .then(response => {
       return response.json();
