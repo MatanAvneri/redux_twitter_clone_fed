@@ -9,8 +9,8 @@
     "flux": "^2.1.1",
     "moment": "^2.14.1",
     "query-string": "^4.3.2",
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "redux": "^3.5.2"
   },
   "scripts": {

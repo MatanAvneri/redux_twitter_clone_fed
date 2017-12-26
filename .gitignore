@@ -1,2 +1,3 @@
 node_modules
-node_modules
+.idea/
+redux_twitter_clone_fed.iml
